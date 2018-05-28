@@ -12,8 +12,11 @@ namespace CustomerMaintenanceClasses
 
     public static class CustomerDB
 	{
-		private const string dir = @"../../../Files/";
-		private const string path = dir + "Customers.txt";
+        //private const string dir = @"../../../Files/";
+        //@"onedrive/documents/C#CS233N/Lab4/labs4and5-nicmol/customerMaintenanceStart/Files/Customers";
+        private const string dir = @"C:\Users\nsm89\OneDrive\Documents\C#CS233N\Lab4\labs4and5-nicmol\CustomerMaintenanceStart\Files";
+
+        private const string path = dir + "Customers.txt";
 
 		public static void SaveCustomers(List<Customer> customers)
 		{
@@ -33,6 +36,8 @@ namespace CustomerMaintenanceClasses
 			// write the end of the document
 			textOut.Close();
 		}
+
+        
 
         public static List<Customer> GetCustomers()
 		{
